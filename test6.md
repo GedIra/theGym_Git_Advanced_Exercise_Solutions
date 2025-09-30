@@ -1,1 +1,2 @@
-Let's make chaos
+Hello, friend!
+Goodbye, world!
