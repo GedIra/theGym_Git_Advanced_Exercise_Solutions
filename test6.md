@@ -1,2 +1,3 @@
-Hello, friend!
+Hello, world!
 Goodbye, world!
+
