@@ -60,3 +60,42 @@ cd theGym_Git_Advanced_Exercise_Solutions/
 129  touch README.md
 130  history
 ```
+
+## Part 2
+
+```bash
+140  git checkout -b ft/new-feature
+141  touch feature.txt
+142  git add feature.txt
+143  git commit -m "feat: Implemented core functionality for new feature"
+144  git checkout  main
+145  touch readme.txt
+146  git add readme.txt
+147  git commit -m "chore: Updated projects readme"
+148  clear
+149  git branch -r
+150  git merge ft/new-feature
+151  git log --oneline
+152  git reset HEAD~
+153  git commit -m "feat: Merge ft/new-feature to main"
+154  git add feature.txt && git commit -m "feat: Merge ft/new-feature to main"
+155  clear
+156  git remove --help
+157  git branch -d ft/new-feature
+158  git merge ft/new-feature
+159  git branch -d ft/new-feature
+160  clear
+161  git log --oneline
+162  git checkout -b ft/new-branch HEAD~2
+163  git switch main
+164  git log --oneline
+165  git merge ft/new-branch
+166  git rebase ft/new-branch
+167  git log --oneline
+168  git branch -m ft/new-branch ft/improved-branch-name
+169  git branch
+170  git checkout 0c432c9
+172  git log --oneline
+173  git switch main
+174  git log --oneline
+```
