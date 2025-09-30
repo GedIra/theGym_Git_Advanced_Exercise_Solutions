@@ -99,3 +99,53 @@ cd theGym_Git_Advanced_Exercise_Solutions/
 173  git switch main
 174  git log --oneline
 ```
+
+## Part 3
+
+```bash
+182  touch test6.md
+183  git add test6.md
+184  git stash
+185  git stash list
+186  git stash pop
+187  git branch
+188   git checkout -b ft/new-feature
+189  git add test6.md
+190  git commit -m "chore: Created test 6 file"
+191  git switch main
+192  git merge ft/new-feature
+193  git checkout ft/new-feature
+194  git add test6.md
+195  git commit -m "chore: Creating conflicts"
+196  git switch main
+197  git merge ft/new-feature
+198  git checkout ft/new-feature
+199  git add test6.md
+200  git commit -m "chore: Creating other conflicts"
+201  git switch main
+202  git add test6.md
+203  git merge ft/new-feature 
+204  git commit -m "chore: Before comflicts"
+205  git merge ft/new-feature
+206  git status
+207  git commit -m "fix: Conflicts resolved"
+208  git status
+209  git log --oneline
+210  git checkout fcd28a6
+211  touch detached.txt
+212  git add detached.txt
+213  git commit -m "chore: Add dectached file"
+214  git switch -c ft/detached
+215  git checkout main
+216  touch .gitignore
+217  git add .gitignore
+218  git commit -m "chore: Add a .gitignore file"
+219  git tag v1.0
+220  git tag
+221  git tag -d v1.0
+222  git tag -a v1.0 -m "chore(release): v1.0"
+223  git push origin main
+224  git tag push --all
+225  git push --tags
+226  history
+```
