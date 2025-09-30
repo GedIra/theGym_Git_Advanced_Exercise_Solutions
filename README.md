@@ -148,4 +148,5 @@ cd theGym_Git_Advanced_Exercise_Solutions/
 224  git tag push --all
 225  git push --tags
 226  history
+227  git pull
 ```
